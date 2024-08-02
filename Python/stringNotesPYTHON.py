@@ -56,7 +56,7 @@ print(string1[5]) #outputs g, the 5th index in the example. C is at index 0.
 #Spaces count as characters in indexing.
 #You can also cound backwards in the string by using negative indexing.
 string1 = "Coding is awesome!"
-print(string1[-3]) #outputs m. When indexing from the end you start counting at onem not zero.
+print(string1[-3]) #outputs m. When indexing from the end you start counting at one, not zero.
 
     #Slicing
 #Slicing uses the indexes to print specific         "slices", or parts, of a string. The first number is the index to start at, and the second number is where to end.
