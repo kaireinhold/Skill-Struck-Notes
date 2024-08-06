@@ -21,6 +21,11 @@ print(distance)
     #Example:
 information = [5, 7, "Ahmed", 9, "Sequoia"]
 print(information)
+#You can also split up strings into a list of characters by using the list() function.
+    #Example:
+animal = "giraffe"
+mylist = list(animal)
+print(mylist)
 
     #Range:
 #Ranges are used to return a certain output from a list using index numbers. Ranges can also be used by themselves to return numbers. Unless you specify otherwise, ranges always start counting and returning outputs from 0.
@@ -88,3 +93,14 @@ for element in elements:
         print(f"{element} is a dictionary")
     else:
         print(f"{element} is of an unknown type")
+
+    #Check IF something is IN or NOT IN a sequence
+    #Example 1:
+lucky_list = ["horseshoe", "clover", "rabbit foot", "socks"]
+if "clover" in lucky_list:
+    print("clover is in lucky_list")
+
+    #Example 2:
+lucky_list = ["horseshoe", "clover", "rabbit foot", "socks"]
+if "hat" not in lucky_list:
+    print("hat is not in lucky_list")
