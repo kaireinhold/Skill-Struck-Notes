@@ -28,7 +28,7 @@ print(num1)
 bool1 = True
 print(bool1)
 
-    #Updating Variables using For Loops (See dataSequencesNotesPYTHON.py first for explanation of what For Loops are.) 
+    #Updating Variables using For Loops (See data-sequencesNotesPYTHON.py first for explanation of what For Loops are.) 
 #You can use For Loops to update a variable with each iteration of the loop.
     #Example:
 my_list = [2, 5, 8, 10]
