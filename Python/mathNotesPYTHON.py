@@ -40,3 +40,33 @@ print(number % 2) #this returns a 1, which shows us that the variable number is 
 #Example:
 number = 245
 print(number % 100) #this prints the last two digits of 245.
+
+    #Using Integers in a List for Math
+#You can use the index numbers of integer values in a list to do math with them. Always remember that indexes start from 0.
+    #Example:
+puppies = [2, 3, 6, 5, 10]
+print(puppies[1] + 10) #this prints 13, the addition of index number 1 and the integer 10.
+    
+    #Rounding
+#You can easily round values with the round() method.
+    #Example:
+pies = 10
+shared = pies/3
+print(round(shared, 2)) #this prints 3.33, the output of 10/3 rounded to the second decimal place.
+
+    #Max and Min
+#The easiest way to find maximum and minimum values from a list is to use the max() and min() methods.
+    #Max Example 1:
+data = max(4, 20, 63, 18, 9, 45)
+print(data) #This prints 63, the largest value in the data set.
+    #Min Example 1:
+data = min(4, 20, 63, 18, 9, 45)
+print(data) #This prints 4, the smallest value in the data set.
+#You can also use the max() and min() methods in the print statement itself
+    #Max Example 2:
+data = [4, 20, 63, 18, 9, 45]
+print(max(data))
+    #Min Example 2:
+data = [4, 20, 63, 18, 9, 45]
+print(min(data))
+#This way, you can use the same data set to get different values in said data set instead of having to create multiple different sets with the same data.
