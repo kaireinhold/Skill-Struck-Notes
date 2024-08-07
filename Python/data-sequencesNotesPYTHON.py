@@ -1,3 +1,4 @@
+
     #Lists:
 #Lists are ordered and changeable. They allow duplicates.
 #Ordered means that the order of the data in thr group matters. These go by index numbers, beginning counting at 0.
@@ -27,8 +28,57 @@ animal = "giraffe"
 mylist = list(animal)
 print(mylist)
 
-    #Range:
-#Ranges are used to return a certain output from a list using index numbers. Ranges can also be used by themselves to return numbers. Unless you specify otherwise, ranges always start counting and returning outputs from 0.
+    #Adding to Lists
+#To add to a list in python, you can use many methods. append(), extend(), and insert() are two of these methods.
+    
+    #append():
+#This method is used to add one piece of data to the end of a list.
+    #Example:
+goats = ["Billy", "Frannie", "Leslie", "Barbara", "Scott"]
+goats.append("Molly")
+print(goats)
+    
+    #extend():
+#This method is used to combine two lists, adding multiple pieces of data to the end of an already existing list.
+    #Example:
+goats = ["Billy", "Frannie", "Leslie", "Barbara", "Scott"]
+goats.extend(["Janie", "Boulder", "Penelope", "Frank"])
+print(goats)
+#If you use this method with just a string, it will add each character of the string as a different piece of data.
+    #Example:
+goats = ["Billy", "Frannie", "Leslie", "Barbara", "Scott"]
+goats.extend("Curly")
+print(goats)
+
+    #insert():
+#This is used to add an item to a list in a specific place.
+    #Example:
+goats = ["Billy", "Frannie", "Leslie", "Barbara", "Scott"]
+goats.insert(2, "Curly")
+print(goats)
+
+    #Removing from Lists
+#To remove data from a list in Python, you can use the remove() method.
+    #Example:
+goats = ["Billy", "Frannie", "Leslie", "Barbara", "Scott"]
+goats.remove("Frannie")
+print(goats)
+#If there are multiple of the same element in a list, the remove() method will take out the first element that matches.
+    #Example:
+goats = ["Billy", "Frannie", "Bob", "Barbara", "Bob", "Scott"]
+goats.remove("Bob")
+print(goats)
+
+    #Return a Value
+#If you want to remove an item from a list, but still have it available to use, you can use the pop() method.
+    #Example:
+goats = ["Billy", "Frannie", "Braden", "Barbara", "Scott"]
+favorite = goats.pop(3)
+print(favorite + " is my favorite goat")
+print(goats)
+
+    #Ranges:
+#Ranges are used to return a certain output from a sequence using index numbers. Ranges can also be used by themselves to return numbers. Unless you specify otherwise, ranges always start counting and returning outputs from 0.
     #Example:
 smells = ["skunk", "lilac", "rain", "ocean", "garbage", "cleaner", "cookies"]
 print(smells[2:5])
@@ -36,7 +86,7 @@ print(smells[2:5])
     #Tuples:
 #Tuples are unordered and unchangeable. They allow duplicates.
 
-    #Dictionaries:
+   #Dictionaries:
 #Dictionaries are unordered, but changeable and indexed. They do not allow duplicates.
 
     #For Loops
