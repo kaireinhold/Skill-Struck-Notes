@@ -1,4 +1,3 @@
-
     #Lists:
 #Lists are ordered and changeable. They allow duplicates.
 #Ordered means that the order of the data in thr group matters. These go by index numbers, beginning counting at 0.
@@ -82,6 +81,37 @@ print(goats)
     #Example:
 smells = ["skunk", "lilac", "rain", "ocean", "garbage", "cleaner", "cookies"]
 print(smells[2:5])
+    #Step:
+#A step is used in a range to skip over values. The assumed value of a step is 1, which will print every value. 2 skips over every other value, and so on.
+    #Example:
+smells = ["skunk", "lilac", "rain", "ocean", "garbage", "cleaner", "cookies"]
+print(smells[0:6:2])
+    #Replacement:
+#You can replace an item in a list with something new using the index value.
+    #Example:
+smells = ["skunk", "lilac", "rain", "ocean", "garbage", "cleaner", "cookies"]
+smells[3] = "perfume"
+print(smells)
+    #Length
+#You can find out how many items are in a list using len(<listName>). Length starts counting from 1, differently to indexes and ranges.
+    #Example:
+smells = ["skunk", "lilac", "rain", "ocean", "garbage", "cleaner", "cookies"]
+print(len(smells))
+    #Sorting:
+#Sorting lists is very simple using the sort() method. You can sort alphabetically, numerically, and in reverse.
+    #Alphabetically Example:
+smells = ["skunk", "lilac", "rain", "ocean", "garbage", "cleaner", "cookies"]
+smells.sort()
+print(smells)
+    #Numerically Example:
+cookies = [3, 55, 9, 12, 13]
+cookies.sort()
+print(cookies)
+    #Reverse Example:
+#This reverses the order in which the lists are sorted.
+cookies = [3, 55, 9, 12, 13]
+cookies.sort(reverse=True)
+print(cookies)
 
     #Tuples:
 #Tuples are unordered and unchangeable. They allow duplicates.
