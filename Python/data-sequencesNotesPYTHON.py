@@ -1,3 +1,4 @@
+
     #Lists:
 #Lists are ordered and changeable. They allow duplicates.
 #Ordered means that the order of the data in thr group matters. These go by index numbers, beginning counting at 0.
@@ -118,69 +119,3 @@ print(cookies)
 
    #Dictionaries:
 #Dictionaries are unordered, but changeable and indexed. They do not allow duplicates.
-
-    #For Loops
-#A for loop is used to address each piece of data in a sequence.
-#It is a way to repeat a block of code multiple times, hence why it is called a 'loop'.
-    #Example of Basic Structure: (commented out as to not give an error when the code is run)
-sequence = ["a", "b", "c", "d"]
-for item in sequence:
-    #do something with your item
-    #'item' is a variable that takes the value of each element in the sequence, one at a time. This can be called anything, but it is important that it makes sense for your loop and is not too long.
-    #'sequence' is the collection of items that you want to iterate over. This would be the name of your variable.
-    #List Example:
-numbers = [1, 2, 3, 4, 5]
-for number in numbers:
-    print(number) #this will print '1 2 3 4 5' (each number on a separate line)
-    #'numbers' is the list that we want to iterate over
-    #'number' is the variable that takes each value from the list, one at a time.
-
-    #String Example:
-string = "hello world"
-for char_ in string:
-    print(char_) #this will print each character in the string that is assigned to the variable 'string' on a separate line, similarly to the list example.
-
-    #Range Example:
-for i in range(5):
-    print(i) #This prints each integer in the range from 0 up until 5. So, it will print '0 1 2 3 4' on a separate line each.
-#You can perform some actions for each element in that sequence, too. This can be used with if-elif-else loops inside of your for loop
-    #Example:
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for number in numbers:
-    if number == 0:
-        print(f"{number} is zero")
-    elif number % 2 == 0:
-        print(f"{number} is even")
-    else:
-        print(f"{number} is odd")
-#You can also use this to handle different types of data in a list.
-    #Example:
-elements = [1, "hello", 3.5, True, None, [1, 2, 3], {"key": "value"}]
-for element in elements:
-    if isinstance(element, bool):
-        print(f"{element} is a boolean")
-    elif isinstance(element, int):
-        print(f"{element} is an integer")
-    elif isinstance(element, str):
-        print(f"{element} is a string")
-    elif isinstance(element, float):
-        print(f"{element} is a float")
-    elif element is None:
-        print(f"{element} is a NoneType")
-    elif isinstance(element, list):
-        print(f"{element} is a list")
-    elif isinstance(element, dict):
-        print(f"{element} is a dictionary")
-    else:
-        print(f"{element} is of an unknown type")
-
-    #Check IF something is IN or NOT IN a sequence
-    #Example 1:
-lucky_list = ["horseshoe", "clover", "rabbit foot", "socks"]
-if "clover" in lucky_list:
-    print("clover is in lucky_list")
-
-    #Example 2:
-lucky_list = ["horseshoe", "clover", "rabbit foot", "socks"]
-if "hat" not in lucky_list:
-    print("hat is not in lucky_list")
