@@ -1,4 +1,4 @@
-    #If Statements
+    #If Loops
 #If statements are used to tell the program "if x occurs, do y"
 #If statements start with the keyword "if", followed by a condition, and ending with a colon.
 #After the colon, the next line is indented. This indicates to the program that if the conditions are met, the indented code is to be executed.
@@ -21,7 +21,7 @@ Bob_age = 40
 if Bob_age > Frank_age:
     print("Bob is older than Frank")
 
-    #Else statements
+    #Else Loops
 #an else statement will catch everything that is not included in the If statement.
     #Example:
 Janet_age = 16
@@ -79,7 +79,7 @@ if your_pet == "fish" or your_pet == "reptile":
 else:
     print("You cannot bring your pet inside the classroom.")
 
-    #Else If statements
+    #Else If Loops
 #Else If statements are used to combine multiple if statements. When you do this, you can add an Else if statement. Else if is shortened to elif.
     #Example:
 price = 10
@@ -167,3 +167,40 @@ if "clover" in lucky_list:
 lucky_list = ["horseshoe", "clover", "rabbit foot", "socks"]
 if "hat" not in lucky_list:
     print("hat is not in lucky_list")
+
+    #While Loops
+#While Loops are used when you want certain code to run while something is true. Think of a while loop as an if loop that repeats until a specific condition is met.
+    #Example:
+people_in_line = 20
+while people_in_line > 1:
+    print("There are " + str(people_in_line) + " people in line. Keep the coaster running!")
+    people_in_line = people_in_line - 1
+while people_in_line == 1:
+    print("There is " + str(people_in_line) + " person in line. Keep the coaster running!")
+    people_in_line = people_in_line - 1
+#You need to be careful with using while loops. If you don't include a way for the condition to STOP being met, the code will just run on forever. The programmer MUST include a way to quit the loop. These are done with decrement and increment operators. If you don't include these, your code will run forever and that will lead to the program crashing.
+    #Decrement Operator
+#Notice how, in the above example, this piece of code is present:
+"people_in_line = people_in_line - 1"
+#Every time the loop runs, the variable named people_in_line is decreased by one. This means that the integer assigned to that variable will become smaller and smaller until the condition is met (aka people_in_line == 0).Once the condition is met, the loop will quit. This stops an infinite loop from happening.
+#Here's another way of writing a decrement:
+"people_in_line -= 1"
+#This functions in essentially the same way as the above code example.
+    #Increment Operator
+#Increment operators work the same way as decrement operators, they simply add to the variable instead of subtracting.
+    #Examples:
+"people_in_line = people_in_line + 1"
+"people_in_line += 1"
+
+    #How to Stop Infinite Loops
+#Don't worry if an infinite loop happens when testing! You just need to close the tab(s)/window(s) that your code is open and running in, and then add your increment or decrement operators before running that code again.
+#Make sure to think about how to make sure the loop has a specified time and place to stop running.
+
+    #If Loop In a While Loop
+#You can add an if loop inside of a while loop! Make sure to pay attention to indentation, though.
+    #Example:
+age = 17
+while age >= 0:
+    if age == 5 or age == 10:
+        print(age)
+    age -= 1
